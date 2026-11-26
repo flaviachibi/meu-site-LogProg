@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlaviaB </title>
+    <style>
+        body {
+            background-color: aquamarine;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--user dig nome e clica em enviar para receber oi-->
+
+    <input type="text" placeholder="Dig seu nome" id="nome" value="Ola" />
+    <button id="botao"> Enviar </button>
+    <p id="mansagem"></p>
+
+
+    <script>
+        //pegar os elementos
+        const campoNome = document.querySelector("#nome") 
+        const botao = document.querySelector("#botao")
+        const mansagem = document.querySelector("#mansagem")
+
+
+        function cumprimentar() {
+            const nome = campoNome.value //pega o q a pesoa escreve
+            mansagem.textContent = `Olá, ${nome}!` //escreva a msg na tela
+        }
+
+        botao.addEventListener("click", cumprimentar)
+
+    </script>
+
+
+
+</body>
+
+</html>
