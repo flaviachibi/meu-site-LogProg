@@ -16,7 +16,7 @@
 <body>
     <!--user dig nome e clica em enviar para receber oi-->
 
-    <input type="text" placeholder="Dig seu nome" id="nome" value="Ola" />
+    <input type="text" placeholder="Dig seu nome" id="nome" />
     <button id="botao"> Enviar </button>
     <p id="mansagem"></p>
 
@@ -30,7 +30,11 @@
 
         function cumprimentar() {
             const nome = campoNome.value //pega o q a pesoa escreve
-            mansagem.textContent = `Olá, ${nome}!` //escreva a msg na tela
+            if(nome.length > 0){
+                mansagem.textContent = `Olá, ${nome}!`
+            } else {
+                mansagem.textContent = "voce não digitou o seu nome"
+            }
         }
 
         botao.addEventListener("click", cumprimentar)
