@@ -35,8 +35,10 @@
         }
 
         function remover() {
-            qtidade--
-            contador.textContent = qtidade
+            if (qtidade >= 1) {
+                qtidade--
+                contador.textContent = qtidade
+            }
         }
 
         //3 etapa conectar as funççoes no evento do clique
