@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlaviaB </title>
+    <title>Ex2 </title>
     <style>
         body {
             background-color: aquamarine;
@@ -15,7 +15,7 @@
 
 <body>
     <!--palcar de um jogo-->
-    <p> Contador: <span id="" contador">0</span></p>
+    <p> Contador: <span id="contador">0</span></p>
 
     <button id="remover">Remover</button>
     <button id="add"> Add </button>
@@ -34,9 +34,14 @@
             contador.textContent = qtidade
         }
 
-        //3 etapa conectar as funççoes no evento do clique
-botaoAdd.addEventListener("click", add)
+        function remover() {
+            qtidade--
+            contador.textContent = qtidade
+        }
 
+        //3 etapa conectar as funççoes no evento do clique
+        botaoAdd.addEventListener("click", add)
+        botaoRemover.addEventListener("click", remover)
 
     </script>
 
