@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1 </title>
+    <style>
+        body {
+            background-color: aquamarine;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--Contador de Caracteres
+    Exibir a qtidade de caracteres digitados em um campo de comentarios
+    ex:
+    <textarea>
+        Gostei muito do atendimento.
+    </textarea>
+    28 caracteres
+    -->
+
+  
+
+
+    <script>
+        //pegar os elementos
+        const campoNome = document.querySelector("#nome") 
+        const botao = document.querySelector("#botao")
+        const mansagem = document.querySelector("#mansagem")
+
+
+        function cumprimentar() {
+            const nome = campoNome.value //pega o q a pesoa escreve
+            if(nome.length > 0){
+                mansagem.textContent = `Olá, ${nome}!`
+            } else {
+                mansagem.textContent = "voce não digitou o seu nome"
+            }
+        }
+
+        botao.addEventListener("click", cumprimentar)
+
+    </script>
+
+
+
+</body>
+
+</html>
