@@ -6,7 +6,7 @@
 git config user.name "flaviachibi"
 git config user.email "flavia.bezerro@hotmail.com"
 
-# Config Global (todos porj futuros utilizarao essa assinatura)
+# Config Global (todos proj futuros utilizarao essa assinatura)
 git config --global user.name "flaviachibi"
 git config --global user.email "flavia.bezerro@hotmail.com"
 
